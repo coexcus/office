@@ -1,0 +1,19 @@
+{
+  "name": "coexcus-office",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.5.0",
+    "electron-builder": "^24.6.3"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.1"
+  }
+}
