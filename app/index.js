@@ -1,6 +1,7 @@
 
 const { app, BrowserWindow } = require('electron');
 
+const prod = process.env.NODE_ENV === 'production';
 
 function createWindow(){
     const win = new BrowserWindow({
@@ -8,6 +9,9 @@ function createWindow(){
         minHeight: 720,
         show: false,
         icon: __dirname + '/icon.png',
+        webPreferences: {
+            devTools: !prod,
+        }
     });
     win.maximize();
     win.loadURL('https://office.coexcus.org')
