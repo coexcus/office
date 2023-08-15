@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "electron ."
+    "dev": "electron .",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,13 @@
   },
   "dependencies": {
     "electron-updater": "^6.1.1"
+  },
+  "build": {
+    "appId": "org.coexcus.office",
+    "productName": "Coexcus Office",
+    "copyright": "Copyright Sar Infocom",
+    "win": {
+      "publish": ["github"]
+    }
   }
 }
