@@ -25,4 +25,5 @@ jobs:
         uses: samuelmeuli/action-electron-builder@v1
         with:
           package_root: "app/"
+          release: true
           github_token: ${{ secrets.github_token }}

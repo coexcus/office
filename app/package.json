@@ -9,7 +9,10 @@
   },
   "keywords": [],
   "author": "Sar Infocom",
-  "repository": "https://github.com/coexcus/office.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coexcus/office.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^25.5.0",
